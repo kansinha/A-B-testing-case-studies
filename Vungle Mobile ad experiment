@@ -18,3 +18,36 @@ Diff in ERPM(B-A)	     0.11       (*calculated* Difference of Avg (eRPM group A 
 Estimate of value of B	 28,230.67 (*calculated* impressions/1000* Diff in ERPM(B-A))
 
 
+
+
+# Hypothesis Testing using metric eRPM in the datset
+
+--**Null hypothesis(H0): **eRPM(B)- eRPM(A) = 0
+--**Alt. hypothesis(H1): **eRPM(B)- eRPM(A) > 0
+
+**Note: We did the t-test paired using the software and we got our output as mentioned below
+
+> t.test(vungle_B, vungle_A, paired = T)
+
+	Paired t-test
+
+data:  vungle_B and vungle_A
+t = 3.3251, df = 29, p-value = 0.002406
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.0430718 0.1807282
+sample estimates:
+mean difference 
+         0.1119 
+
+
+--**We reject the null**--
+
+SE is lower in the paired t-test because the difference in eRPM per day varies less than eRPM itself
+Can you say why?
+This is because day-to-day differences in performance are due to two reasons:
+Ø Difference in nature of algorithm 
+Ø Each day is different from the other – this increases the SE of the difference of means estimator
+
+
+####  next steps coming soon
