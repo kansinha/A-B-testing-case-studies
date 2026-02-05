@@ -1,0 +1,20 @@
+## Business Problem
+
+Vungle wanted to evaluate whether a new mobile ad algorithm could improve their conversion performance compared to the existing ad mechanism? The objective was to increase post-ad conver. 
+rates while maintaing user engagement and  minimizing negative impact on session behavior,
+
+Groups            |    Description
+-------------------------------------------------------------
+Control group     |  The existing mobile ad algorithm
+Treatment group   |   The new mobile ad algorithm
+
+##  primary metrics
+
+total impressions	   252,284,778  (*calculated* sum(impressions for control group and treatment group)
+Avg eRPM A	          3.35        (*calculated* Average eRPM of control group)
+Avg eRPM B	          3.46        (*calculated* Average eRPM of Treatment group)
+Diff in ERPM(B-A)	     0.11       (*calculated* Difference of Avg (eRPM group A - eRPM group B)
+	
+Estimate of value of B	 28,230.67 (*calculated* impressions/1000* Diff in ERPM(B-A))
+
+
